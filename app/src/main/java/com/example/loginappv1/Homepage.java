@@ -12,7 +12,7 @@ public class Homepage extends AppCompatActivity {
 
     TextView username, name, email, phone;
     SharedPreferences sharedpreferences;
-    Button logout;
+    Button logout, join, create;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,8 @@ public class Homepage extends AppCompatActivity {
         email = findViewById(R.id.emaildsp);
         phone = findViewById(R.id.phonedsp);
         logout = findViewById(R.id.logout);
+        join = findViewById(R.id.joingrp);
+        create = findViewById(R.id.creategrp);
 
         sharedpreferences = getApplicationContext().getSharedPreferences("MyPrefs",MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -35,6 +37,22 @@ public class Homepage extends AppCompatActivity {
 
 
         editor.commit();
+
+        join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Homepage.this,pop.class);
+                startActivity(intent);
+            }
+        });
+
+        create.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Homepage.this,pop2.class);
+                startActivity(intent);
+            }
+        });
 
 
 

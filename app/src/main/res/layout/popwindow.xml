@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#9FA0FF41">
+
+
+
+    <EditText
+        android:id="@+id/grpcode"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:hint="Enter Group Code"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="225dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="GO!!!!"/>
+
+
+</LinearLayout>

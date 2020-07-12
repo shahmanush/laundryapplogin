@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LoginAppv1</string>
+
+    <string-array name="dropdown">
+        <item>Medical Store</item>
+        <item>Ration Shop</item>
+        <item>Dairy</item>
+    </string-array>
 </resources>
